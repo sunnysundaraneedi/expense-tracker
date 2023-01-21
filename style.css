@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.expense-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.container {
+  margin: 25px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+.title {
+  margin-top: 16px;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+.trans-card {
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 20px 0;
+}
+
+.trans-card > div {
+  flex: 1;
+  text-align: center;
+}
+
+.trans-card > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.income {
+  color: #2ecc71;
+}
+
+.expense {
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #757474;
+}
+
+.add-btn {
+  background-color: #9c88ff;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+li {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  background-color: red;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  line-height: 15px;
+  padding: 2px 5px;
+  transition: 300ms;
+  margin-bottom: 24px;
+}
+
+li:hover .delete-btn {
+  opacity: 1;
+}
